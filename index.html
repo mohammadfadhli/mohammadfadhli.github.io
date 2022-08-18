@@ -5,17 +5,20 @@
     <body>
         <h1>I am Fadhli</h1>
         <form method=post>
-            <br/>
-            Name: <input type="text" value="Enter Your Name" name="name"/>
-            <br/>
-            Favourite Fruits: <input type="checkbox" name="apple" value="Apple">
-            <input type="checkbox" name="orange" value="Orange">
-            <br/>
-            Relationship Status: <input type="radio" name="single" value="Single">
-            <input type="radio" name="single" value="Single">
-            </br/>
-            <input type="reset" name="reset" value="Reset"/>
-            <input type="submit" name="submitquery" value="Submit"/>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Relationship Status</th>
+                    <th>Favourite Fruits</th>
+                    <th>Submit</th>
+                </tr>
+                <tr>
+                    <td>Name: <input type="text" value="Enter Your Name" name="name"/></td>
+                    <td>Single <input type="radio" name="single" value="Single"> Married <input type="radio" name="married" value="Married"></td>
+                    <td>Apple <input type="checkbox" name="apple" value="Apple"> Orange <input type="checkbox" name="orange" value="Orange"></td>
+                    <td><input type="submit" name="submitquery" value="Submit"/></td>
+                </tr>
+            </table>
         </form>
     </body>
 </html>
