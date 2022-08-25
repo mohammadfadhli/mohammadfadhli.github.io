@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
+<html lang="en">
+<head>
+    <title>Fadhli's Website</title>
+</head>
+<style>
 
-            h1{
-                font-family: Arial, Helvetica, sans-serif;
-            }
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 500px;
+    border: solid black;
+    background-color: aqua;
+}
 
-            p{
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 15px;
-            }
+.biotable{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
-            img.avatar {
-                height: 200px;
-                border-radius: 30px;
-            }
+img{
+    display: block;
+}
 
-            .center{
-                margin: auto
-            }
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
-        </style>
-    </head>
-    <body>
-            <h1 class="center">Mohammad Fadhli's Personal Website</h1>
-        
-            <img src="profile pic.jpg" with="300" height="400" class="avatar center">
-        <p class="center">
-            Hi! My name is <strong>Fadhli</strong>. I am an undergraduate student at <strong>Singapore Management University (SMU)</strong>
-        pursuing a Bachelor's degree in <strong>Information Systems</strong>.
-        </p>
-        <p class="center">My hobbies includes <strong>playing video games, coding and sleeping.</strong></p>
-    </body>
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.bio{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: justify;
+}
+
+.yt{
+    text-align: center;
+}
+
+</style>
+<body>
+    <h1>FADHLI'S WEBSITE</h1>
+
+    <table>
+        <tr>
+            <td>
+                <img src="profile pic.jpg" width="150px">
+            </td>
+            <td class="biotable">
+                <h2>
+                    HELLO!
+                </h2>
+                <p class="bio">
+                    My name is Fadhli. I am an undergraduate student at <strong>Singapore Management University (SMU)</strong> pursuing a Bachelor's degree in Information Systems. My hobbies includes playing video games, coding and sleeping.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <h3>My favourite Travel Destination!</h3>
+    <div class="yt">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n3Dru5y3ROc?autoplay=1&mute=1"></iframe>
+    </div>
+</body>
 </html>
