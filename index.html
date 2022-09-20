@@ -11,8 +11,30 @@
     <title>Fadhli's Site</title>
   </head>
   <style>
-
+    #pfp {
+      opacity: 0;
+      filter: alpha(opacity=40);
+    }
   </style>
+  <script>
+    // fade in pfp
+    function fadeIn(el) {
+      el.style.opacity = 0;
+      var tick = function () {
+          el.style.opacity = +el.style.opacity + 0.01;
+          if (+el.style.opacity < 1) {
+              (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+          }
+      };
+      tick();
+    }
+
+    function myFunction() {
+        var el = document.getElementById("pfp");
+      console.log(el);
+        fadeIn(el);
+    }
+  </script>
   <body>
 
     <!-- navbar -->
@@ -40,7 +62,7 @@
 
       <!-- jumbotron -->
       <div class="p-5 bg-image text-dark bg-secondary bg-gradient mb-3 text-center" style="height:400px;">
-        <h1><strong>I'M FADHLI</strong></h1>
+        <h1 class="display-1"><strong>I'M FADHLI</strong></h1>
         <p><em>An aspiring software developer</em></p>
         <blockquote class="blockquote">
           <p class="mb-0">"A man who has no imagination has no wings."</p>
@@ -66,7 +88,7 @@
                 website will undergo frequent changes. Thank you for your understanding.
           </div>
           <div class="col-12 col-md-12 col-lg-4 text-center">
-            <img src="pfp.png" class="img" alt="...">
+            <img onload="myFunction()" src="pfp.png" id="pfp" alt="...">
           </div>
           <div class="col-12 col-md-12 col-lg-4 p-5">
             <h3>Details</h3>
@@ -108,6 +130,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
