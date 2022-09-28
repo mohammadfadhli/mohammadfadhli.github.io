@@ -8,12 +8,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+
     <title>Fadhli's Site</title>
   </head>
   <style>
     #pfp {
       opacity: 0;
       filter: alpha(opacity=40);
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif !important;
     }
   </style>
   <script>
@@ -40,20 +47,31 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light text-white bg-light" style="background-color: #00000033;">
         <div class="container-fluid">
-          <a class="navbar-brand text-dark" href="#"><strong>Fadhli's Website</strong></a>
+          <a class="navbar-brand text-dark" href="#"><img src="home.png" style="width:60px" alt=""></a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link disabled text-dark" aria-current="page" href="#" >Home</a>
+                <a class="nav-link active text-dark" aria-current="page" href="#" ><strong>Home</strong></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-dark" href="#">Links</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Socials
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://github.com/Fadhli1998">Github</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/mohd-fadhli-997607155/">LinkedIn</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-dark" href="#">Contact Me</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://t.me/mfbad98">Telegram</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -61,28 +79,28 @@
       </nav>
 
       <!-- jumbotron -->
-      <div class="p-5 bg-image text-dark bg-secondary bg-gradient mb-3 text-center" style="height:400px;">
-        <h1 class="display-1"><strong>I'M FADHLI</strong></h1>
-        <p><em>An aspiring software developer</em></p>
+      <div class="p-5 bg-image text-dark bg-secondary bg-gradient mb-3 text-center" style="word-wrap:break-word">
+        <h1 style="font-size: 90px"><strong>I'M FADHLI</strong></h1>
+        <p><em>a Year 2 Information Systems student</em></p>
         <blockquote class="blockquote">
           <p class="mb-0">"A man who has no imagination has no wings."</p>
         </blockquote>
         <figcaption class="blockquote-footer text-white">
             Muhammad Ali
           </figcaption>
-        <a class="btn btn-light" href="https://github.com/Fadhli1998" role="button">Github</a>
-        <a class="btn btn-secondary  ms-3" href="https://www.linkedin.com/in/mohd-fadhli-997607155/" role="button">LinkedIn</a>
+        <a class="btn btn-light border border-dark" href="https://github.com/Fadhli1998" role="button">Github</a>
+        <a class="btn btn-light border border-dark ms-3" href="https://www.linkedin.com/in/mohd-fadhli-997607155/" role="button">LinkedIn</a>
       </div>
 
       <!-- profile tab -->
       <div class="container-fluid text-center p-2">
-        <h1>PROFILE</h1>
+        <h3><strong>PROFILE</strong></h3>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-12 col-lg-4 p-5">
-            <h3>About Me</h3>
+          <div class="col-12 col-md-12 col-lg-4 p-5 text-center">
+            <h3><strong>About Me</strong></h3>
             <p class="mt-4" style="text-align:justify;line-height:200%;">Hello! I am a Year 2 Information Systems student at SMU. Although I don't look like it,
                I am a very friendly individual so please feel free to approach me. I am currently working on my web development skills. Hence, this
                 website will undergo frequent changes. Thank you for your understanding.
@@ -90,12 +108,12 @@
           <div class="col-12 col-md-12 col-lg-4 text-center">
             <img onload="myFunction()" src="pfp.png" id="pfp" alt="...">
           </div>
-          <div class="col-12 col-md-12 col-lg-4 p-5">
-            <h3>Details</h3>
+          <div class="col-12 col-md-12 col-lg-4 p-5 text-center">
+            <h3><strong>Details</strong></h3>
             <h6 class="mt-4">Name:</h6>
             <p style="line-height:200%;">Fadhli</p>
             <h6 class="mt-4">Age:</h6>
-            <p style="line-height:200%;">Guess</p>
+            <p style="line-height:200%;">5*6+20+13</p>
             <h6 class="mt-4">Hobbies:</h6>
             <p style="line-height:200%;">Cycling, Coding, Sleeping</p>
           </div>
@@ -106,7 +124,7 @@
       <div class="container mx-auto">
         <div class="card mx-auto mt-4">
             <div class="card-body text-center">
-              <h5 class="card-title">In the meantime...</h5>
+              <h5 class="card-title"><strong>In the meantime...</strong></h5>
               <p class="card-text">Check out my favourite travel destination. South Korea.</p>
             </div>
             <div class="ratio ratio-16x9">
@@ -116,9 +134,9 @@
       </div>
 
       <!-- footer -->
-      <footer class="bg-primary text-center text-lg-start mt-5">
+      <footer class="bg-secondary bg-gradient text-center text-lg-start mt-5">
         <!-- Copyright -->
-        <div class="text-center p-3 text-white" style="background-color: rgba(117, 117, 117);">
+        <div class="text-center p-3 text-white">
           © 2022 Copyright:
           <a class="text-white" href="https://fadhli1998.github.io/">fadhli1998.github.io</a>
         </div>
